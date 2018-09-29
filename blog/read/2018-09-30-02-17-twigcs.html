@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="utf-8" />
+        <title>Tristan Maindron - Symfony Certified Expert Developper </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+                    <link href="/assets/main.css" type="text/css" rel="stylesheet" />
+        
+                        </head>
+    <body>
+        <div>
+                <div class="menu">
+    <a href="/"><i class="fa fa-home"></i></a>
+    <a href="https://github.com/OwlyCode"><i class="fa fa-github-square"></i></a>
+    <a href="https://www.linkedin.com/pub/tristan-maindron/41/884/867"><i class="fa fa-linkedin-square"></i></a>
+    <a href="http://www.twitter.com/OwlyCode"><i class="fa fa-twitter-square"></i></a>
+    </div>    <div id="header">
+        <div id="logo">
+            <h1 class="stylish">Tristan Maindron - Web Log</h1>
+            <h2 class="narrowed">Open source things, unfinished experimental projects and curiosities</h2>
+        </div>
+    </div>
+
+                <section class="articles narrowed">
+        <div class="article">
+            <h2>September 30th, 2018 &nbsp; // Twigcs, it&#039;s the missing Phpcs for Twig !</h2>
+            <p>Lately I've been working a lot on <a href="https://github.com/allocine/twigcs">Twigcs</a>, an open source project I initiated while working
+at Allociné and kept working on ever after. So I felt like it's time to speak about it here.</p>
+<p><strong>What is it ?</strong></p>
+<p>The idea came as a direct inspiration from Phpcs. I was looking for a tool that would do the same for twig templates but
+never found one. So I created mine.</p>
+<p>It is a CLI tool based on Symfony's console component that will lint your twig templates. Various things are checked like
+spacing, naming conventions or unused macros / variables. Whenever a mistake is detected, it is added to a report that is also
+compliant with continuous integration systems (using junit format).</p>
+<p>The tool comes with a default rule set based on SensioLabs's <a href="https://twig.symfony.com/doc/2.x/coding_standards.html">official guidelines</a>
+but can easily be overridden by your own rules.</p>
+<p><strong>What does it look like ?</strong></p>
+<pre><code class="language-bash"># twigcs .
+./vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/inheritance/array_inheritance_nonexistent_parent.html.twig
+l.1 c.36 : ERROR There should be 1 space(s) after ",".
+l.1 c.12 : ERROR There should be no space before "[".
+./vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/inheritance/array_inheritance_empty_parent.html.twig
+l.1 c.15 : ERROR There should be 1 space(s) after ",".
+l.1 c.12 : ERROR There should be no space before "[".
+./vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/inheritance/array_inheritance_valid_parent.html.twig
+l.1 c.31 : ERROR There should be 1 space(s) after ",".
+l.1 c.12 : ERROR There should be no space before "[".
+./vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/inheritance/array_inheritance_null_parent.html.twig
+l.1 c.17 : ERROR There should be 1 space(s) after ",".
+l.1 c.12 : ERROR There should be no space before "[".
+./source/layout.html.twig
+l.17 c.16 : ERROR There should be 1 space(s) before closing a block.
+9 violation(s) found</code></pre>
+<p><strong>How to get it ?</strong></p>
+<p>On Github as a <a href="https://github.com/allocine/twigcs/releases">phar archive</a> or with
+<a href="https://packagist.org/packages/allocine/twigcs">composer</a>!</p>
+<p><strong>Are there any integrations ?</strong></p>
+<p>Yes ! <a href="https://github.com/Cerzat43">Cyril</a>, a former co-worker, developed a
+<a href="https://marketplace.visualstudio.com/items?itemName=cerzat43.twigcs">VSCode extension</a>.</p>
+
+            <div id="disqus_thread"></div>
+<script>
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://owlycode-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </section>
+        </div>
+
+        <script src="/assets/app.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126649164-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-126649164-1');
+        </script>
+    </body>
+</html>

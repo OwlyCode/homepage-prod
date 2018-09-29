@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Tristan Maindron - Symfony Certified Expert Developper - Web Log</title>
+        <description>Ceci est un exemple de flux rss 2.0</description>
+        <lastBuildDate>September 30, 2018 00:24</lastBuildDate>
+        <link>https://tristan.maindron.io/blog/rss.xml</link>
+                    <item>
+                <title>Twigcs, it&#039;s the missing Phpcs for Twig !</title>
+                <description>Lately I&#039;ve been working a lot on Twigcs, an open source project I initiated while working
+at Allociné and kept working on ever after. So I felt like it&#039;s time to speak about it here.
+</description>
+                <pubDate>September 30, 2018 02:17</pubDate>
+                <link>https://tristan.maindron.io/blog/read/2018-09-30-02-17-twigcs.html</link>
+            </item>
+            </channel>
+</rss>
