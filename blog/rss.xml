@@ -3,8 +3,17 @@
     <channel>
         <title>Tristan Maindron - Symfony Certified Expert Developper - Web Log</title>
         <description>Ceci est un exemple de flux rss 2.0</description>
-        <lastBuildDate>September 30, 2018 12:28</lastBuildDate>
+        <lastBuildDate>November 8, 2018 13:24</lastBuildDate>
         <link>https://tristan.maindron.io/blog/rss.xml</link>
+                    <item>
+                <title>Procjam 2018 : Post mortem of Causality</title>
+                <description>Better later than never, here is a feedback on my attempt at the the ProcJam 2018. The goal was to create
+something that generates things. So I made a procedurally generated timeline that tells the story of a fictional
+planet.
+</description>
+                <pubDate>November 8, 2018 13:26</pubDate>
+                <link>https://tristan.maindron.io/blog/read/2018-11-08-13-26-causality.html</link>
+            </item>
                     <item>
                 <title>Twigcs, it&#039;s the missing Phpcs for Twig !</title>
                 <description>Lately I&#039;ve been working a lot on Twigcs, an open source project I initiated while working

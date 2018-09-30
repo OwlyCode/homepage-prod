@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="utf-8" />
+        <title>Tristan Maindron - Symfony Certified Expert Developper </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+                    <link href="/assets/main.css" type="text/css" rel="stylesheet" />
+        
+                        </head>
+    <body>
+        <div>
+                <div class="menu">
+    <a href="/"><i class="fa fa-home"></i></a>
+    <a href="https://github.com/OwlyCode"><i class="fa fa-github-square"></i></a>
+    <a href="https://www.linkedin.com/pub/tristan-maindron/41/884/867"><i class="fa fa-linkedin-square"></i></a>
+    <a href="http://www.twitter.com/OwlyCode"><i class="fa fa-twitter-square"></i></a>
+                <a href="/blog/rss.xml"><i class="fa fa-rss"></i></a>
+            <a href="/blog/1.html"><i class="fa fa-undo"></i></a>
+        </div>    <div id="header">
+        <div id="logo">
+            <h1 class="stylish">Tristan Maindron - Web Log</h1>
+            <h2 class="narrowed">Open source things, unfinished experimental projects and curiosities</h2>
+        </div>
+    </div>
+
+                <section class="articles narrowed">
+        <div class="article">
+            <h2>November 8th, 2018 &nbsp; // Procjam 2018 : Post mortem of Causality</h2>
+            <p>Better later than never, here is a feedback on my attempt at the the ProcJam 2018. The goal was to create
+something that generates things. So I made a procedurally generated timeline that tells the story of a fictional
+planet.</p>
+<p>The main principles are to have a world with a state. Events occurs and alter the state, which in turn changes the
+events that will occur. For instance, if the dice rolled that a sentient lifeform is pacifist then a war is less
+likely to occur in the future.</p>
+<ul>
+<li>You can try it by yourself here : <a href="https://owlycode.itch.io/causality">https://owlycode.itch.io/causality</a></li>
+<li>And you can grab the code here : <a href="https://github.com/OwlyCode/causality">https://github.com/OwlyCode/causality</a></li>
+</ul>
+<p>Sadly I had to drop some features/plans in order to finish in time. The first and biggest one being the ability to &quot;time travel&quot;.
+I wanted the player to be able to change events outcome so they could try to rewrite a planet's history to what they wanted.
+I am currently working on this for a post-jam update. Also the experience can be quite repetitive because of the small amount of
+written events, this is also on the list of things to improve.</p>
+<p>One other important sacrifice I made is documenting the project. The tool was designed to be reusable for anyone by just forking
+the code and writing different events. I'm also working on a better readme on the project's github page. In the meantime if
+you want to toy around with it, you can have a look at the main file <a href="https://github.com/OwlyCode/causality/blob/master/src/index.tsx">https://github.com/OwlyCode/causality/blob/master/src/index.tsx</a> to
+see how events are loaded in the engine and <a href="https://github.com/OwlyCode/causality/tree/master/src/possibilities">https://github.com/OwlyCode/causality/tree/master/src/possibilities</a> to see how they
+are designed.</p>
+<p>Last but not least, here's the two main things I learned the hard way :</p>
+<p><strong>Reduce the scope</strong></p>
+<p>Doing one thing right is better than doing everything badly. With Causality my scope was too big :
+to generate a full timeline I had to generate a planet, animals, civilizations and more. It caused me to work on a lot of different features
+where I could have just focused on one (like the civilizations) to explore it more deeply. This is what caused my tool to feel
+repetitive over time : too few events written per ages (world creation / animal evolution / civilizations).</p>
+<p><strong>Text based games aren't easier to make</strong></p>
+<p>Not having to deal with 2D or 3D maths doesn't mean it will be easier or quicker. Generating text also comes with a lot of
+complexity, like plural or conjugation. No one notices that a pixel of your texture is glitching during 2 frames when the
+character rotates but everyone will notice a typo or a missing space.</p>
+<p>That's all folks ! If you have any question about the code or if you want to share your jam advices don't hesitate to leave a comment
+or to ask me on twitter !</p>
+<ul>
+<li>Link to the procjam website : <a href="http://www.procjam.com/">http://www.procjam.com/</a></li>
+<li>List of entries for the jam : <a href="https://itch.io/jam/procjam/entries">https://itch.io/jam/procjam/entries</a></li>
+</ul>
+
+            <div id="disqus_thread"></div>
+<script>
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://owlycode-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </section>
+        </div>
+
+        <script src="/assets/app.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126649164-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-126649164-1');
+        </script>
+    </body>
+</html>
