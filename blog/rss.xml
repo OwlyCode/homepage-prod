@@ -3,7 +3,7 @@
     <channel>
         <title>Tristan Maindron - Symfony Certified Expert Developper - Web Log</title>
         <description>Ceci est un exemple de flux rss 2.0</description>
-        <lastBuildDate>September 30, 2018 00:24</lastBuildDate>
+        <lastBuildDate>September 30, 2018 00:38</lastBuildDate>
         <link>https://tristan.maindron.io/blog/rss.xml</link>
                     <item>
                 <title>Twigcs, it&#039;s the missing Phpcs for Twig !</title>
