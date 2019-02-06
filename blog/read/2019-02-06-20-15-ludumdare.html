@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="utf-8" />
+        <title>Tristan Maindron - Symfony Certified Expert Developper </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+                    <link href="/assets/main.css" type="text/css" rel="stylesheet" />
+        
+                        </head>
+    <body>
+        <div>
+                <div class="menu">
+    <a href="/"><i class="fa fa-home"></i></a>
+    <a href="https://github.com/OwlyCode"><i class="fa fa-github-square"></i></a>
+    <a href="https://www.linkedin.com/pub/tristan-maindron/41/884/867"><i class="fa fa-linkedin-square"></i></a>
+    <a href="http://www.twitter.com/OwlyCode"><i class="fa fa-twitter-square"></i></a>
+                <a href="/blog/rss.xml"><i class="fa fa-rss"></i></a>
+            <a href="/blog/1.html"><i class="fa fa-undo"></i></a>
+        </div>    <div id="header">
+        <div id="logo">
+            <h1 class="stylish">Tristan Maindron - Web Log</h1>
+            <h2 class="narrowed">Open source things, unfinished experimental projects and curiosities</h2>
+        </div>
+    </div>
+
+                <section class="articles narrowed">
+        <div class="article">
+            <h2>February 6th, 2019 &nbsp; // Ludum Dare 43: Post mortem of Panquetzalt</h2>
+            <p>A bit late as usual, here is what I learned, what worked and what didn't while
+attempting for the first time the Ludum Dare. As it was my first LD, my only goal was
+to submit something completed, even a very bad game.</p>
+<h2>The event</h2>
+<img style="width: 33%; float: right; margin-left: 10px" src="https://static.jam.vg/raw/380/e1/z/1c25c.png" />
+<p>But first let's talk about how it went. The goal of the Ludum Dare is to create a game in 48 hours,
+all by yourself. Litteraly everything (music, images, etc...) must be created during the event. At the
+start of the event a theme is given: your game have to comply to it.</p>
+<p>This time the theme was: &quot;Sacrifices must be made&quot;.</p>
+<p>So I decided to take this to the letter and create a game that literaly makes you sacrificing people to satisfy an
+angry god. It's called Panquetzalt and you can find it on <a href="https://owlycode.itch.io/panquetzalt">itch.io</a>. If you
+want to see how it's made, here is the <a href="https://github.com/OwlyCode/LD43">repository</a>.
+<a href="https://www.twitch.tv/elysiagriffin">Elysia Griffin</a>, a twitch streamer also
+<a href="https://www.twitch.tv/videos/346057870?t=03h46m47s">tested the game live</a>.</p>
+<p>Here are the ratings the game received:</p>
+<ul>
+<li>Overall: 206th (3.5 average from 30 ratings)</li>
+<li><strong>Fun: 303rd (3.107 average from 30 ratings) -&gt; Worst category</strong></li>
+<li>Innovation: 82nd (3.679 average from 30 ratings)</li>
+<li><strong>Theme: 57th (4.107 average from 30 ratings) -&gt; Best category</strong></li>
+<li>Graphics: 145th (3.696 average from 30 ratings)</li>
+<li>Audio: 177th (3.232 average from 30 ratings)</li>
+<li>Humor: 179th (3 average from 30 ratings)</li>
+<li>Mood: 167th (3.37 average from 29 ratings)</li>
+</ul>
+<p>Considering there were around 750 games submitted, this means that the game did quite well. It certainly is not a &quot;hit&quot;
+and the ratings for the &quot;fun&quot; part are not good. The overall feeling was that the game is too hard too quickly.</p>
+<h2>How it went</h2>
+<p>Pretty good ! But it took me the whole week to recover :D</p>
+<p>Below is my schedule during the event :</p>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Time</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Saturday</td>
+<td>03:00 - 04:30</td>
+<td>Finding the idea / Drafting a mockup</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>04:30 - 07:00</td>
+<td>Main spritesheet drawing</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>07:00 - 09:00</td>
+<td>Unity bootstrapping</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>09:00 - 10:00</td>
+<td>Family time</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>10:00 - 19:00</td>
+<td>Main loop coding</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>19:00 - 21:00</td>
+<td>Shower / Food / Youtube break</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>21:00 - 01:30</td>
+<td>Main loop coding</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>01:30 - 03:00</td>
+<td>Youtube / TV / Relaxing / Checking how it's going for everyone</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>03:00 - 09:00</td>
+<td>Sleep time</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>09:00 - 10:00</td>
+<td>Soundmaking</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>10:00 - 12:00</td>
+<td>UI rework / polishing</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>12:00 - 12:30</td>
+<td>Food / Youtube break</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>12:30 - 13:30</td>
+<td>Music rework</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>13:30 - 20:00</td>
+<td>Adding context (main menu, tutorial, ending scene)</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>20:00 - 21:30</td>
+<td>Food / Family time</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>21:30 - 22:30</td>
+<td>Preparing the Itch.io and LD entry</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>22:30 - 01:00</td>
+<td>Balancing, adding variety, final touches</td>
+</tr>
+<tr>
+<td>Monday</td>
+<td>01:00 - 02:00</td>
+<td>Publishing the game / Testing</td>
+</tr>
+<tr>
+<td>Monday</td>
+<td>02:00 - 03:00</td>
+<td>Relaxing / checking how it's going for everyone</td>
+</tr>
+</tbody>
+</table>
+<p>On the 48 hours, 35 hours were used for working and 13 hours were used for resting.</p>
+<h2>What I learned</h2>
+<p><strong>Rest</strong></p>
+<p>48 hours can be a long run, and depending on your physical condition, you might collapse if you try to work 48 hours straight.
+The key to success it to have real breaks where you think about something else, eat, wash and sleep. It allows you to maintain
+higher speed of work and a clearer mind in the long run, making you faster on the overall.</p>
+<p><strong>Be dirty</strong></p>
+<p>The goal is to complete a game within a very small timeframe. Making good code takes time, and you have none. Some
+people told me this before when I asked for advices but I found it myself very useful in order to complete the game.
+I stopped working 1 hour before the deadline and did no refactoring. If I had stopped to clean the code I might not
+have completed the event.</p>
+<p>Given the game did not become the new Minecraft, I will never sell it, so I will never improve the code. But who cares? :)</p>
+<p><strong>Complete the main loop as quickly as possible, then iterate</strong></p>
+<p>My main fear was to fail to submit a finished game. It didn't matter if it was a bad game, my only goal was to publish something
+finished enough to be considered as a game. This approach saved me a lot of trouble by forcing me to drop every non necessary
+feature. After the first 24 hours I had an ugly game with no music, no UI, no tutorial and very little user feedback: but it
+had a start, an end and a complete game loop. From there I just had to make small iterations of improvements until the end.
+Every hour I had a version I could submit anytime. This created a feeling of being safe about the deadline and allowed me to
+focus on being productive and creative.</p>
+<p><strong>Beware of the difficulty bias</strong></p>
+<p>This is what caused the greatest flaw of my game : being too hard. As you build your game you become really good at it. Because you
+know how it's made, how the internals works, but also because while testing it you get trained for it. This is what happened for my
+game. I scaled the difficulty based on my own feedback and ended up creating something I am the only one to find easy. I have no good
+advice to give you for that given I made the mistake too. So I can only tell you to be aware of that phenomenon! :D</p>
+<h2>What's next ?</h2>
+<p>Well, hopefuly I'll have a free week-end for the next Ludum Dare!</p>
+
+            <div id="disqus_thread"></div>
+<script>
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://owlycode-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </section>
+        </div>
+
+        <script src="/assets/app.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126649164-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-126649164-1');
+        </script>
+    </body>
+</html>
